@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AlertController, NavController, ToastController } from 'ionic-angular';
+import { DemoPage } from '../demo/demo';
 
 
 @Component({
@@ -12,6 +13,8 @@ export class SupportPage {
 
   submitted: boolean = false;
   supportMessage: string;
+
+  Page2Go = DemoPage;
 
   constructor(
     public navCtrl: NavController,
